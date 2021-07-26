@@ -1,3 +1,29 @@
+     let soundClassifier;
+     let textDiv;
+  let textP;
+  let textP2;
+    let options = {
+    probabilityThreshold: 0.9
+  };
+  soundClassifier = ml5.soundClassifier("https://teachablemachine.withgoogle.com/models/k-uODmS53/model.json", options, modelReady);
+
+ function modelReady() {
+    soundClassifier.classify(gotResults);
+    isModelReady = true;
+    resetGame();
+
+  }
+
+  function gotResults(error, results) {
+    if(error) {
+      console.error(error);
+    } else {
+      let label = results[0].label;
+      textP2.html("Command: " + label);
+    }
+  }
+
+
 // Get the modal
         var modal = document.getElementById('myModal');
 
@@ -10,7 +36,6 @@
             modal.style.display = "block";
             x = document.querySelector(".gamehead");
             x.textContent = "Game Over"
-
         }
 
         modelfunwin = function() {
@@ -41,38 +66,7 @@
 
 
         //var now = new Date().getTime();
-        function startTimer(duration, display) {
-            var start = Date.now(),
-                diff,
-                minutes,
-                seconds;
 
-            function timer() {
-                if(playing) {
-                    diff = duration - (((Date.now() - start) / 1000) | 0);
-                    minutes = (diff / 60) | 0;
-                    seconds = (diff % 60) | 0;
-                    minutes = minutes < 10 ? "0" + minutes : minutes;
-                    seconds = seconds < 10 ? "0" + seconds : seconds;
-                    display.textContent = "Game ends in " + minutes + ":" + seconds;
-
-                    if (diff <= 0) {
-                        display.textContent = "Game Over";
-                        start = Date.now() + 1000;
-                        playing = false
-                        modelfungo();
-                    }
-                }
-            };
-            timer();
-            setInterval(timer,1000)
-        }
-
-        window.onload = function () {
-            twominutes = 30;
-            x = document.querySelector("#timerel");
-            startTimer(twominutes,x)
-        }
         playing = true
         window.addEventListener('keydown',doKeyDown,true);
 
