@@ -25,6 +25,14 @@
      text-align: center;
     font-family:courier;    
  }
+ h3{
+     text-align: left;
+    font-family:courier;    
+ }
+ h4{
+     text-align: left;
+    font-family:courier;    
+ }
     ul{
         list-style-type: none;
         margin:none;
