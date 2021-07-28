@@ -17,12 +17,12 @@ function setup() {
   textP2 = createP("Model Loading, please wait...");
   textP2.parent(textDiv);
   let options = {
-    probabilityThreshold: 0.9
+    probabilityThreshold: 0.85
   };
-  soundClassifier = ml5.soundClassifier("https://teachablemachine.withgoogle.com/models/k-uODmS53/model.json", options, modelReady);
+  soundClassifier = ml5.soundClassifier("https://teachablemachine.withgoogle.com/models/-Q5Z-61PR/model.json ", options, modelReady);
   playing = false;
 }
-
+// OG model "https://teachablemachine.withgoogle.com/models/k-uODmS53/model.json"
 function draw() {
   if(playing){
     checkCommand();
@@ -119,7 +119,7 @@ function checkCommand() {
       m.moveright("canvas");
       break;
 
-    case "super right": /* Right was screamed */
+    case "jump": /* Right was screamed */
       for(let i = 0; i < 20; i++) {
         m.moveright("canvas");
       }
@@ -132,7 +132,7 @@ function checkCommand() {
     previousCommand = commandLabel;
 }
   
- // textP2.html("Background Noise");
+  textP2.html("Background Noise");
   
 }
 
