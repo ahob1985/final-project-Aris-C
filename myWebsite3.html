@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My first website</title>
+        <script>
+            
+            function popUp(){
+                var name_element = document.getElementById('fname');  
+                var fNamze = name_element.value;
+                var name_element2 = document.getElementById("lname");  
+                var lNamze = name_element2.value;
+                var name_element3 = document.getElementById("email");  
+                var email1 = name_element3.value;
+                var name_element4 = document.getElementById("subject");  
+                var feedback= name_element4.value;
+                alert ("First name: " + fNamze + "\nLast name: " + lNamze + 
+                "\nEmail: " + email1 + " \nThank you for your feedback: " + feedback);
+
+         } 
+        </script>
+
+        <title>My First website</title>
+        <link rel ="stylesheet" href = "myWebsite.css" />
+    </head>
+    <style>
+        
+        input[type=text], select, textarea {    
+            width: 50%;    
+            padding: 12px;    
+            border: 1px solid rgb(70, 68, 68);    
+            border-radius: 4px;    
+            resize: vertical;    
+}    
+input[type=email], select, textarea {    
+  width: 75%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+    
+label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;    
+}    
+    
+input[type=submit] {    
+  background-color: rgb(37, 116, 161);    
+  color: white;    
+  padding: 12px 20px;    
+  border-radius: 4px;    
+  cursor: pointer;    
+  float: center;    
+}    
+    
+input[type=submit]:hover {    
+  background-color: #45a049;    
+}    
+    
+.container {    
+  border-radius: 5px;    
+  background-color: #f2f2f2;    
+  padding: 20px;    
+}    
+    </style>
+
+    <body id = "page3">
+      <div class="navbar">    
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="myWebsite2.html">Hidden Genius Project</a></li>
+            <li><a href="myWebsite3.html">Feedback</a></li>
+            <li><a href="myWebsite5.html">My top books</a></li>
+            <li><a href="myWebsite6.html">My final Projcet</a></li>
+            <li id="log" style="float:right" ><a href="mywebsite4.html">Login</a></li>
+        </ul>
+          </div>
+
+<h2>FEEDBACK FORM</h2>   <br> 
+
+<div>
+<form id="form1" class="form">  
+    <label >First name:</label><br>  
+    <input type="text" id="fname" name="first_name"><br> 
+    <label >Last name:</label><br> 
+    <input type="text" id="lname" name="last_name"><br>  
+    <label >Email:</label><br>   
+    <input type="text" id="email" name="Email"> <br>  <br>  
+    <label >FeedBack</label> <br>   
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>    
+    <input type="submit" value="Submit" onclick = "popUp()">    
+        
+</form>    
+</div>
+    </body>
+
+</html>

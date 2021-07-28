@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel ="stylesheet" href = "myWebsite.css" />
+    <script>
+         function popUp2(){
+                var u_element = document.getElementById('uname');  
+                var uNamze = u_element.value;
+                var name_element2 = document.getElementById("psw");  
+                var pNamze = name_element2.value;
+                alert("username is: " + uNamze + "\nYour password is: "  + pNamze)
+         }
+         function popUp3(){
+             alert("Thats rough buddy")
+         }
+
+    </script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 30%;
+  height : 50%;
+  border-radius: 35%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+  text-align: left;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body id= "page4">
+  <div class="navbar">
+  </div>
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="myWebsite2.html">Hidden Genius Project</a></li>
+        <li><a href="myWebsite3.html">Feedback</a></li>
+        <li><a href="myWebsite5.html">My top books</a></li>
+        <li><a href="myWebsite6.html">My final Projcet</a></li>
+        </ul>
+    <h2 text-align= left >Login Form</h2>
+    <div class="navbar">
+    <form >
+    <div class="imgcontainer">
+        <img src="https://i.graphicmama.com/blog/wp-content/uploads/2016/12/06092052/galo_walkb.gif" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" id="uname" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password"  id="psw" placeholder="Enter Password" name="psw" required>
+            
+        <button onclick = "popUp2()" type="submit">Login</button>
+        <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+    </div>
+
+    <br>
+   <span onclick = "popUp3()"  style="text-align:center;" class="psw">Forgot <a href="#">password?</a></span>
+   <br>
+   <br>
+   <br>
+   <br> 
+   <br>
+   <br>
+   <br>
+   <br>   
+   <br>
+   <br>
+   <br> 
+   .
+    </div>
+    </form>
+
+</body>
+</html>

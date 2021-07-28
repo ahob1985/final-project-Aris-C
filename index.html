@@ -1,98 +1,59 @@
-<!doctype html>
-<html xmlns="http://www.w3.org/1999/html">
+<!--Hello and welcome. 
+This is a webpage that talks a little bit about me
+and some things that I like-->
+
+<!DOCTYPE html>
+<html>
+<style>
+	p {
+		text-align: center;
+	}
+
+	body {
+		background: linear-gradient(#FF6347, #008080);
+	}
+</style>
 
 <head>
-	<meta charset="UTF-8" />
-	<title>Canvas Maze Game</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js" integrity="sha512-gQVBYBvfC+uyor5Teonjr9nmY1bN+DlOCezkhzg4ShpC5q81ogvFsr5IV4xXAj6HEtG7M1Pb2JCha97tVFItYQ=="
-	 crossorigin="anonymous">
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/addons/p5.sound.min.js" integrity="sha512-wM+t5MzLiNHl2fwT5rWSXr2JMeymTtixiw2lWyVk1JK/jDM4RBSFoH4J8LjucwlDdY6Mu84Kj0gPXp7rLGaDyA=="
-	 crossorigin="anonymous">
-	</script>
-	<script src="https://unpkg.com/ml5@latest/dist/ml5.min.js">
-	</script>
-	<style>
-		* {
-			padding: 0;
-			margin: 0;
-		}
-
-		#heading {
-			text-align: center;
-			margin-top: 15px;
-			margin-bottom: 15px;
-			font-size: xx-large;
-		}
-
-		#heading {
-			margin: 0 auto
-		}
-
-		#canvas {
-			background: #99afa3;
-			display: block;
-			margin: 0 auto;
-		}
-
-		#c {
-			background: #eeeeee;
-			display: block;
-			margin: 0 auto;
-		}
-
-		#timerel {
-			background: #eeeeee;
-			display: block;
-			margin: 0 auto;
-		}
-	</style>
-
-
-	<link rel="stylesheet" href="style.css">
+	<title>My First website</title>
+	<link rel="stylesheet" href="myWebsite.css" />
 </head>
 
 <body>
-	Final project :)
-	<section>
-		<div id="wrapper" style="margin-left:auto; margin-right:auto;">
-			<h1 id="heading" style="background-color: #a59e9a; text-decoration-style: solid; color: #F8F8F8; width: 40%; margin-top: 0px; margin-bottom: 10px">
-			Final project</h1>
-			<div id="maze">
-				<p style="text-align: center;margin-bottom: 10px">Find the way out of Maze!</p>
-				<div id="c" style="margin-left:auto; margin-right:auto;margin-bottom: 10px;text-align: center;width: 10%;font-size: large"></div>
-
-				<canvas id="canvas" width="523" height="523" style="margin-left:auto; margin-right:auto">
-					This text is displayed if your browser does not support HTML5 Canvas.
-				</canvas>
-				<div id="timerel" style="margin-left:auto; margin-right:auto;margin-top:0px;text-align: center;width: 15%;font-size: large"></div>
-
-			</div>
-
-			<!-- The Modal -->
-			<div id="myModal" class="modal">
-
-				<!-- Modal content -->
-				<div class="modal-content">
-					<div class="modal-header">
-						<span class="close">&times;</span>
-                    <h2 class="gamehead"></h2>
-                </div>
-                <div class="modal-footer">
-                    <h2 id="demo" onmouseover="" style="cursor:pointer;">Play Again?</h2>
-                </div>
-            </div>
-
-        </div>
-
-
-    </div>
-    <!--canvas id="c" width="2048" height="2048" style="margin-left:auto; margin-right:auto"></canvas-->
-   
-   
-
-
-</section>
-<script src="script.js"></script>
-</body>
+	<div class="navbar">
+		<ul>
+			<li><a class="active" href="#home">Home</a></li>
+			<li><a href="myWebsite2.html">Hidden Genius Project</a></li>
+			<li><a href="myWebsite3.html">Feedback</a></li>
+			<li><a href="myWebsite5.html">My top books</a></li>
+			<li><a href="myWebsite6.html">My final Projcet</a></li>
+			<li id="log" style="float:right"><a href="mywebsite4.html">Login</a></li>
+		</ul>
+	</div>
+	<h1 id="title">Welcome to my Home Page</h1>
+	<br>
+        <hr>
+        <img id = "image1"  src = "IMG_1234.jpg" alt="Image not found" width="210px" height="320px">
+        <br>
+        <p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" > 
+            Hello, my name is Aris Carter. This is a picture of me at the Mission district in SF. I love to watch basketball,
+             and my favorite team is the Warriors. 
+            I am currently in 11th grade and I go to Berkeley High school.<br>
+            I love to travel, run track, moutain bike and play lots of video games. And my favorite color is orange. I've been coding for
+             a few years and the languages I've learned are java script, css, html, c++, and python. I made this website in my first summer of the Hidden genuis project.<br> If you click the final project tab you'll see what I made in the second summer.
+            
+            
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>       
+        <br>
+        <br>
+        <br>
+        <br>  
+        <br>
+        <br>
+    
+  </body>
 </html>
